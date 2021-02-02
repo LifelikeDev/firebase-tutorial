@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Working With Firebase</title>
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <h1 class="heading">Database of books and their details</h1>
+
+        <ul class="list">
+            <!-- <li class="item">The Dos and Donts of Code</li>
+            <li class="item">CSS: Sass and Less</li> -->
+        </ul>
+
+        <div class="form-group">
+            <form>
+                <label for="book">Add a new book...</label>
+                <input type="text" name="book" id="book" required>
+                <input type="submit" value="Add">
+
+            </form>
+        </div>
+
+        <button class="button large">Unsubscribe Changes</button>
+
+    </div>
+
+    
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyCGL_pJMkBFneQaa_rKsV2gvEDjOVTozt8",
+        authDomain: "first-database-d66d0.firebaseapp.com",
+        projectId: "first-database-d66d0",
+        storageBucket: "first-database-d66d0.appspot.com",
+        messagingSenderId: "697873280671",
+        appId: "1:697873280671:web:75b0491d30646b1264fcaa",
+        measurementId: "G-JVYJW15KE3"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.firestore();
+
+    // firebase.analytics();
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
